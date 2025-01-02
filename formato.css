@@ -169,7 +169,7 @@ body::after {
     display: flex;
     flex-direction:column; 
 }
- #video-isidro{
+ #video-isidro, #video-boda-regia{
     display: block; 
     margin: 0 auto;
     margin-bottom: 20px;
@@ -183,7 +183,7 @@ body::after {
     justify-content: space-between;
     align-items: center;
  }
-#video-cruz, #ayto-cruz, #video-boda-regia, #web-boda{
+#video-cruz, #ayto-cruz, #web-boda{
     margin-left: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
