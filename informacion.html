@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Activida práctica final HTML</title>
+        <link rel="stylesheet" type="text/css" href="formato.css">
+        <h1 id="titulo-pg">Valencia de Alcántara</h1>
+    </head>
+    <body>
+        <!--- Menu de B¡Navegación -->
+        <div id="menu-navegación"> 
+            <table id="menu">
+                <th><a href="index.html">Inicio</a></th>
+                <th><a href="historia.html">Historia</a></th>
+                <th><a href="tradiciones.html">Tradiciones</a></th>
+                <th><a href="datos.html">Datos Estadísticos</a></th>
+                <th><a href="informacion.html">Información Turística</a></th>
+                <th><a href="multimedia.html">Contenido Multimedia</a></th>
+                <th><a href="contacto.html">Contacto</a></th>
+            </table>
+        </div>
+        <h1 id="titulos1">Información Turística</h1>    
+        <h2 id="titulos2">Oficina de Turismo</h2>
+        <div class="fondo">
+                <p id="texto-turismo">
+                Para obtener infomación de forma presencial acuda a la oficina de turismo. Toda la información necesaria sobre este establecimiento
+                aparece a continuación.
+                </p>
+            <div class="oficina-turismo">
+                <img id="imagen-oficina" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Oficina_de_Turismo_-_Conventual_Santa_Clara_-_Museo_Etnográfico%2C_Valencia_de_Alcántara.jpg/1200px-Oficina_de_Turismo_-_Conventual_Santa_Clara_-_Museo_Etnográfico%2C_Valencia_de_Alcántara.jpg" width="600" height="400" alt="Oficina Turismo">
+                    <ul class="lista-turismo">
+                        <li>Horario. Lunes a Domingo de 9:00-14:00</li>
+                        <li>Ubicación. Plaza Gregorio Bravo, Valencia de Alcántara, Cáceres, 10500 </li>
+                        <li>Teléfono: 927 58 21 48</li>
+                        <li><a id="mapa-enlace" href="https://maps.app.goo.gl/Cu7YSUMpN2J6BMTq5" target="_blank">Si pinchas aquí, irás a la ubicación en Google Maps</a></li>
+                    </ul>   
+            </div>
+        </div>
+        <h2 id="titulos2">Mapa</h2>
+        <div class="fondo">
+                <p id="texto-mapa">
+                    Mapa con los horarios y localización de los diferentes puntos de interés:
+                </p>
+            <div class="iframe-contenedor-mapa">
+                <iframe id="mapa-web" name="Mapa" src="https://redex.org/ficheros/archivos/2016_05/valencia-de-alcantara.pdf" 
+                    width="600" height="400"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen frameborder="0"></iframe>
+                    <div class="lista-horarios">
+                        <ul>
+                            <li>Sinagoga. Lunes a Sábado. 10:00h-14:00h</li>
+                            <li>Centro de Interpretación/Fundación Indalecio Hernández. Martes a Sábado de 10:00h-14:00h; de 17:00-19:00</li>
+                            <li>Iglesias. Todas tienen el mismo horario. Lunes a Domingo de 10:00h-13:30h; de 18:00h-21:00h (La Iglesia de Rocamador no 
+                                está siempre abierta en este horario)</li>   
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

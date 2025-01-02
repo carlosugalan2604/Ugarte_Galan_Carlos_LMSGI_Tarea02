@@ -1,0 +1,650 @@
+body {
+    margin: 0;
+    height: auto;
+    padding-top: 0;
+    overflow: auto;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./Multimedia/fondo.jpeg');
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: grayscale(100%);
+    z-index: -1; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    mix-blend-mode: overlay; 
+}
+
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hwb(0 100% 0% / 0.81); 
+    z-index: -1; 
+}
+
+#titulo-pg{
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(65, 0, 0), hsl(0, 100%, 10%));
+    color:aliceblue;
+    margin: 0;
+    padding: 10px 0;
+    position: relative; 
+    top: 0;
+    z-index: 2; 
+}
+
+#menu-navegación {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: sticky;
+    top: 0;
+
+}
+#menu {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: o;
+    padding: 0;
+    border-collapse: collapse;
+    background: linear-gradient(to bottom, rgb(65, 0, 0), hsl(0, 100%, 10%)); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+}
+    
+#menu th {
+    padding: 10px;
+    width: 100%;
+    border: 4px solid hsl(0, 0%, 13%);
+    background: linear-gradient(to bottom, rgb(65, 0, 0), hsl(0, 100%, 10%));
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 25px; 
+    text-align: center;
+    white-space: nowrap;
+}
+
+#menu a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+}
+
+#menu a:hover {
+    color:rgb(0, 136, 29);
+}
+/*subfondo del texto y elementos varios */
+.fondo{
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+ }
+
+#titulos1{ 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 700; 
+    font-size: 2em; 
+    color: #333333; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border-bottom: 2px solid #cccccc; 
+    padding-bottom: 10px; 
+    text-align: left; 
+}
+#titulos2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+    font-size: 35px;
+    color: hsl(0, 3%, 24%); 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+    padding-left: 20px;
+    border-bottom: 2px solid #cccccc;
+    text-transform: capitalize; 
+}
+/* Fin tabla, fondo y aspectos generales */
+/* Apartado de historia */
+
+#texto-general-historia, #texto-fiestas, #texto-datos, 
+#lista-limites, #texto-turismo, #texto-mapa, #texto-contacto,#redes-sociales{
+    font-size: 25px;
+    margin: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+#enlace-dolmen {
+    display: block; 
+    max-width: 30%; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+#imagen-dolmen {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+    cursor: pointer;
+    padding-bottom: 20px; 
+    border-radius: 8px;
+}
+#video-dolmen {
+    display: block; 
+    margin: 0 auto;
+    border-radius: 8px;
+ }
+
+#audio_dolmen {
+    display: block; 
+    margin:0 auto;
+    margin-top: 20px; 
+    border-radius: 8px;
+}
+
+ /* Fin apartado historia */
+ /* Apartado tradiciones */
+
+ .fondo-san-isidro{
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction:column; 
+}
+ #video-isidro{
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+ }
+
+ .contenedor-cruz, .contenedor-boda{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+ }
+#video-cruz, #ayto-cruz, #video-boda-regia, #web-boda{
+    margin-left: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+/* Datos */
+/* Estilo del contenedor del mapa */
+
+.contenedor-mapas {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 0;
+    gap: 20px; 
+}
+#mapa-espana, #mapa-extremadura, #mapa-valencia {
+    width: 300px; 
+    align-items: center; 
+    height: auto;
+    display: block;
+    margin-left: 20px;
+}
+
+.flecha {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black; 
+    transform: rotate(-90deg); 
+}
+.mapa-con-pie {
+    display: block; 
+    text-align: center; 
+}
+
+.mapa-con-pie img {
+    display: block; 
+    margin: 0 auto; 
+    width: 200px; 
+}
+.pies-foto{
+    margin-top: 10px; 
+    font-size: 20px; 
+    color: #575757; 
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic; 
+    text-align: center;
+}
+#lista-pedanias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0%;
+}
+#pedanias{
+    font-size: 25px;
+    text-align: center;
+}
+/*Fin de datos */
+
+/*Información Turística*/
+.oficina-turismo{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 20px 0;
+}
+#imagen-oficina{
+    display: block; 
+    margin:0 auto;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 20px; 
+    border-radius: 8px;
+}
+.lista-turismo{
+    padding:0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 3;
+}
+.lista-turismo li{
+    margin-bottom: 10px;
+}
+#mapa-enlace {
+    font-size: 20px; 
+    text-decoration: none; 
+    color: hsl(0, 0%, 0%); 
+    cursor: pointer;
+    transition: color 0.1s ease; /
+}
+
+#mapa-enlace:hover {
+    color: hsl(240, 100%, 50%); 
+    text-decoration: underline;
+}
+
+.iframe-contenedor-mapa {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    margin: 20px 0;
+}
+
+#mapa-web {
+    flex: 1;
+    max-width: 600px; 
+    height: 400px;
+    margin-left: 100px;
+    border-radius: 8px;
+    
+}
+.lista-horarios {
+    flex: 0.5; 
+    padding: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 3; 
+}
+
+.lista-horarios li {
+    margin-bottom: 10px;
+}
+/*Fin info */
+
+/*Contacto */
+form {
+    max-width: 700px;
+    border: 0px;
+    background: transparent;
+    
+}
+
+fieldset {
+    border: none;
+}
+
+.titulo-formulario, #titulo_calendario, #cuadro_review {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-left: 0;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #888;
+    font-family: 'Roboto', sans-serif;
+}
+
+form fieldset legend {
+    margin-left: 20px; 
+    padding-left: 0; 
+}
+
+form fieldset {
+    padding: 0;
+    border: none; 
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #444;
+    margin-left: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #88888800;
+    outline: none;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    font-style: italic;
+    color: #aaaaaa;
+}
+.motivo-visita {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.motivo-visita input[type="radio"] {
+    margin-right: 0px; 
+    vertical-align: middle; 
+}
+/* Estilo para el desplegable */
+#desplegable{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-left: 0;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #888;
+    font-family: 'Roboto', sans-serif;
+}
+select {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+select:focus {
+    border-color: #888;
+    outline: none;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+#fecha_visita {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+#fecha_visita:focus {
+    border-color: #888;
+    outline: none;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+textarea {
+    width: 100%;
+    height: 100px; 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+    resize: vertical; 
+}
+
+textarea:focus {
+    border-color: #888;
+    outline: none;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+}
+
+textarea::placeholder {
+    font-style: italic;
+    color: #aaa;
+}
+.botones {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: hsl(0, 0%, 59%); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    transition: background-color 0.2s ease; 
+}
+
+input[type="reset"] {
+    background-color: #000000; 
+    margin-left: 20px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #14cd03; 
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f; 
+}
+/*Fin Contacto*/
+
+/* Inicio */
+.redes-sociales-ayto{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px;
+    gap: 20px; 
+}
+.redes-sociales-ayto a {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0; 
+    width: auto; 
+    height: auto; 
+    border: none; 
+}
+#instagram, #x, #facebook, #youtube, #web-vda, #img-vda{
+    width: 150px; 
+    height: 100px;
+    display: block;
+    object-fit: contain;
+}
+
+#titulos-destacados, #ambiente {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #4a4a4a; 
+    font-size: 2rem; 
+    text-transform: uppercase; 
+    border-bottom: 2px solid #a67c52; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+div.paisajes, div.gastronomia, div.ambiente {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#img-destacados {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#img-destacados:hover {
+    transform: scale(2.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+div.gastronomia img, div.ambiente img, div.paisajes img {
+    display: inline-block; 
+    vertical-align: middle; 
+    margin: 20px; 
+}
+
+
+div.paisajes h2, div.gastronomia h2, div.ambiente h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* Apartado Multimedia */
+#titulos-multimedia{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #4a4a4a; 
+    font-size: 2rem; 
+    text-transform: uppercase; 
+    border-bottom: 2px solid #a67c52; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.feria, .barrio-gotico, .incendio, .contenedor-audio, .contenedor-dolmen-vda,
+.contenedor-ruta-dolmen{
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 20px;
+}
+
+
+#texto-multimedia{
+    font-size: 25px;
+    margin: 20px;
+    text-align: justify;
+}
+
+.incendio {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    max-width: 1200px; 
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+#texto-incendio{ 
+    margin: 10px 0;
+    color: #4a4a4a;
+    font-size: 20px;
+    text-align: left;
+    flex: 1; 
+}
+
+#img-incendio{
+    width: 300px; 
+    height: auto;
+    margin-left: 20px; 
+    border-radius: 8px;
+}
+
+#video-san-bartolome, #video-barrio-gotico{
+    width: 500px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin: 20px;
+    display: block;
+    margin-bottom: 20px; 
+}
+
+
+
+
+
+

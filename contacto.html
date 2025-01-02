@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Activida práctica final HTML</title>
+        <link rel="stylesheet" type="text/css" href="formato.css">
+        <h1 id="titulo-pg">Valencia de Alcántara</h1>
+    </head>
+    <body>
+        <!--- Menu de B¡Navegación -->
+        <div id="menu-navegación"> 
+            <table id="menu">
+                <th><a href="index.html">Inicio</a></th>
+                <th><a href="historia.html">Historia</a></th>
+                <th><a href="tradiciones.html">Tradiciones</a></th>
+                <th><a href="datos.html">Datos Estadísticos</a></th>
+                <th><a href="informacion.html">Información Turística</a></th>
+                <th><a href="multimedia.html">Contenido Multimedia</a></th>
+                <th><a href="contacto.html">Contacto</a></th>
+            </table>
+        </div>
+        <h1 id="titulos1">Contáctanos</h1>
+        <p id="texto-contacto">Para más información o concertar una visita guiada, rellene este formulario.</p>
+    <form id="formulario-contacto" action="procesar_formulario.php" method="post">
+        <fieldset class="formulario">
+            <legend class="titulo-formulario">Datos Personales</legend>
+
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre" maxlenght="15"><br>
+
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" id="surname" name="apellidos" placeholder="Escribe tus apellidos" maxlenght="30"><br>
+
+                <label for="dni">DNI</label><br>
+                <input type="text" id="dni" name="dni" placeholder="Escribe tu DNI" maxlength=“10”><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="emailaddress" placeholder="Escribe tu email"><br>
+                
+                <label for="telefono">Teléfono de contacto</label><br>
+                <input type="text" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono"><br>    
+        </fieldset><!---Fin de datos personales-->
+        <fieldset class="formulario"><!--Reserva-->
+            <legend class="titulo-formulario">Elige el motivo de la visita</legend>
+            <div class="motivo-visita">
+                <input type="radio" name="motivo" value="ocio" id="ocio">
+                <label for="ocio">Ocio</label>
+                
+                <input type="radio"  name="motivo" value="negocio" id="negocio">
+                <label for="negocio">Negocios</label>
+                
+                <input type="radio" name="motivo" value="familia" id="familia">
+                <label for="familia">Familia</label>  
+            </div>  
+             <div class="contenedor-desplegable">
+                <label id="desplegable" for="lugar_de_procedencia">Lugar de Procedencia</label><br>
+                <select id="comunidad_autonoma" name="comunidad_autonoma" required>
+                    <option value="" disabled selected>¿De dónde eres?<option>
+                    <option value="extremadura">Extremadura</option>
+                    <option value="andalucia">Andalucía</option>
+                    <option value="aragon">Aragon</option>
+                    <option value="principado_de_asturias">Principado de Asturias</option>
+                    <option value="baleares">Baleares</option>
+                    <option value="canarias">Canarias</option>
+                    <option value="cantabria">Cantabria</option>
+                    <option value="castilla_la_mancha">Castilla La Mancha</option>
+                    <option value="castilla_y_leon">Castilla y León</option>
+                    <option value="cataluna">Cataluña</option>
+                    <option value="comunidad_valenciana">Comunidad Valenciana</option>
+                    <option value="galicia">Galicia</option>
+                    <option value="comunidad_de_madrid">Comunidad de Madrid</option>
+                    <option value="region_de_murcia">Región de Murcia</option>
+                    <option value="comunidad_foral_de_navarra">Comunidad Foral de Navarra</option>
+                    <option value="pais_vasco">País Vasco</option>
+                    <option value="la_rioja">La Rioja</option>
+                    <option value="otros">Otros</option>
+                </select>
+             </div>
+             <div class="reserva">
+                <label id="titulo_calendario" for="fecha_de_visita">Seleccione fecha y hora de la visita</label><br>
+                <input id="fecha_visita" type="datetime-local"  name="fecha_visita" required>
+             </div>
+
+             <label id="cuadro_review" for="necesidades">Review y datos que deba saber de los usuarios de la visita</label><br>
+             <textarea id="descripcion" name="descripcion" placeholder="Escribe aquí los comentarios adicionales o necesidades especiales"></textarea>
+            <div class="botones">
+                <input type="submit" id="boton_enviar" name="Enviar" value="Enviar formulario">
+                <input type="reset" id="boton_limpiar" name="Limpiar" value="Borrar datos">
+            </div>
+        </fieldset>
+    </form>
+    </body>
+</html>

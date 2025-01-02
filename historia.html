@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Activida práctica final HTML</title>
+        <link rel="stylesheet" type="text/css" href="formato.css">
+        <h1 id="titulo-pg">Valencia de Alcántara</h1>
+    </head>
+    <body>
+        <!--- Menu de B¡Navegación -->
+        <div id="menu-navegación"> 
+            <table id="menu">
+                <th><a href="index.html">Inicio</a></th>
+                <th><a href="historia.html">Historia</a></th>
+                <th><a href="tradiciones.html">Tradiciones</a></th>
+                <th><a href="datos.html">Datos Estadísticos</a></th>
+                <th><a href="informacion.html">Información Turística</a></th>
+                <th><a href="multimedia.html">Contenido Multimedia</a></th>
+                <th><a href="contacto.html">Contacto</a></th>
+            </table>
+        </div>
+        <!-- Seccion Introduccion Historia-->
+        <h1 id="titulos1">Historia</h1>
+        <div class="contenedor-audio"> 
+            <p id="texto-general-historia"> Valencia de Alcántara ha estado poblada desde épocas prehistóricas. Los resto arqueológicos en forma de dolmen es lo que explican este hecho.
+                La definición de dolmen se encuentra dándole play al siguiente audio. 
+            </p>
+             <audio id="audio_dolmen" controls autoplay>
+                <source src="./Multimedia/Dolmen.mp3">
+            </audio>
+        </div>
+    
+        <!--Texto de los dólmenes-->
+        <div class="contenedor-dolmen-vda">
+            <p id="texto-general-historia">Alrededor de Valencia de Alcántara, se han encontrado restos de un total de 55 dólmenes.
+                Algunos de ellos, se conservan enteros. <br>Para saber más sobre los dólmenes valencianos o rutas entorno a los mismos, pulse en la imagen. </p>
+            <a id="enlace-dolmen" href="https://turismovalenciadealcantara.es/recursos/dolmenes-de-valencia-de-alcantara/" target="_blank"> 
+                <img id="imagen-dolmen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dolmen_El_Mellizo_%2816720765433%29.jpg/2560px-Dolmen_El_Mellizo_%2816720765433%29.jpg" alt="Pasa el ratón por encima de la imagem"/>
+                </a>
+        </div>
+            <h2 id="titulos2">Ruta por los dólmenes</h2>
+        <div class="contenedor-ruta-dolmen">
+            <p id="texto-general-historia">Para poder apreciar mejor los paisajes que rodean a estos monumentos arqueológicos, haga clik en el siguiente vídeo:</p>
+            <iframe id="video-dolmen" name="Ruta por los dolmenes" src="https://www.youtube.com/embed/D_ltA9-vCpc" width="300" height="200"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+        </div>
+        </div>
+      </body>
+</html>
